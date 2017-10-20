@@ -1,6 +1,7 @@
 # Java
 
----- TP1 ----------------
+---- TP1 à faire pour le 15/11 ---------------
+
 Ecrire une classe appelée MinMax qui contient un programme principal déterminant :
   - la plus petite valeur dans un tableau d'entiers
   - la plus grande valeur dans un tableau de flottants
