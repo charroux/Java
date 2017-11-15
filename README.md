@@ -20,6 +20,12 @@ Ecrire une classe appelée Eleves qui contient un tableau de String (chaîne de 
 ---- TP2 à faire pour le 21/11 ---------------
 
 Re-écrire la classe Statistique du TP1 en :
- - créant un constructeur intialisant le tableau
+ - créant un constructeur intialisant le tableau (déclaré en tant que données privées) avec des nombres aléatoires
+ - ajouter un deuxième  constructeur qui reçoit en argument un tableau de notes et qui intialise le tableau privé avec
  - mettre le calcul de la moyenne dans une fonction qui retourne la moyenne
  - mettre le calcul de l'écart type dans une fonction qui retourne la l'écart-type et qui fait appel à la moyenne
+ - écrire une classe appelée Main contenant un programme principal qui utilise les fonctions ci-dessus
+ 
+Créer une classe Eleve contenant comme données un nom et une note. Ajoutez à cette classe un constructeur initialisant le nom et la note. Ajoutez à la classe les fonctions get et set qui permettent de retourner et de modifier les valeurs des données nom et porte (voir https://github.com/charroux/Java/blob/master/src/tp2/MonDossierMedical.java). 
+
+Créer une autre version de la classe Statistique appelée StatistiqueEcole qui contient les mêmes fonctions que la classe Statistique mais qui manipule un tableau d'élèves au lieu d'un tableau de note.
