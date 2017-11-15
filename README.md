@@ -16,3 +16,10 @@ Ecrire une classe appelée Statistique réalisant (utiliser des tableaux) :
   - le calcul de l'écart type des notes de l'élève
 
 Ecrire une classe appelée Eleves qui contient un tableau de String (chaîne de caractères représentant des noms) et initialisez le tableau avec un boucle qui demande la saisie des noms au clavier (chercher sur le web comment on fait des saisie clavier).
+
+---- TP1 à faire pour le 21/11 ---------------
+
+Re-écrire la classe Statistique du TP1 en :
+ - créant un constructeur intialisant le tableau
+ - mettre le calcul de la moyenne dans une fonction qui retourne la moyenne
+ - mettre le calcul de l'écart type dans une fonction qui retourne la l'écart-type et qui fait appel � la moyenne
