@@ -14,6 +14,9 @@ public class Eleves {
 		
 		for(int i=0; i<chaines.length; i++) {
 			chaines[i] = sc.nextLine();
+			if(chaines[i].equals(" ")) {
+				
+			}
 		}
 		
 		System.out.println("Vous avez saisie :");

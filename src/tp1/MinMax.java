@@ -1,6 +1,10 @@
 package tp1;
 
 public class MinMax {
+	
+	
+	
+	private int i;
 
 	public static void main(String[] args) {
 
