@@ -22,6 +22,8 @@ public class Eleves {
 			System.out.println(chaines[i]);
 		}
 
+		sc.close();
+		
 	}
 
 }
