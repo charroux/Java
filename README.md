@@ -20,7 +20,7 @@ Ecrire une classe appelée Eleves qui contient un tableau de String (chaîne de 
 ---- TP2 à faire pour le 21/11 ---------------
 
 Re-écrire la classe Statistique du TP1 en :
- - créant un constructeur intialisant le tableau (déclaré en tant que données privées) avec des nombres aléatoires
+ - créant un constructeur intialisant le tableau (déclaré en tant que donnée privée) avec des nombres aléatoires
  - ajouter un deuxième  constructeur qui reçoit en argument un tableau de notes et qui intialise le tableau privé avec
  - mettre le calcul de la moyenne dans une fonction qui retourne la moyenne
  - mettre le calcul de l'écart type dans une fonction qui retourne la l'écart-type et qui fait appel à la moyenne
