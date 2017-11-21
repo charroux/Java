@@ -25,4 +25,23 @@ public class Statistique {
 		}
 		return moyenne / notes.length;
 	}
+	
+	public float ecartType() {
+		float moyenne = this.moyenne();
+		float ecartType = 0;
+		for(int i=0; i<notes.length; i++) {
+			ecartType = ecartType + (float)Math.pow(notes[i] - moyenne, 2);
+		}
+		ecartType = ecartType / notes.length;
+		return (float)Math.sqrt(ecartType);
+	}
+	
+	public float ecartType(float moyenne) {
+		float ecartType = 0;
+		for(int i=0; i<notes.length; i++) {
+			ecartType = ecartType + (float)Math.pow(notes[i] - moyenne, 2);
+		}
+		ecartType = ecartType / notes.length;
+		return (float)Math.sqrt(ecartType);
+	}
 }

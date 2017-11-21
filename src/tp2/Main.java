@@ -13,7 +13,15 @@ public class Main {
 		System.out.println("age = " + age);
 		
 		Statistique stat = new Statistique(10);
+		
 		float resultat = stat.moyenne();
+		System.out.println("La moyenne est : " + resultat);
+		
+		float resultat1 = stat.ecartType();
+		System.out.println("L'écart-type est : " + resultat1);
+		
+		float resultat2 = stat.ecartType(resultat);
+		System.out.println("L'écart-type est : " + resultat2);
 		
 		float[] notes = new float[10]; 
 		
