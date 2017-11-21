@@ -29,3 +29,13 @@ Re-écrire la classe Statistique du TP1 en :
 Créer une classe Eleve contenant comme données un nom et une note. Ajoutez à cette classe un constructeur initialisant le nom et la note. Ajoutez à la classe les fonctions get et set qui permettent de retourner et de modifier les valeurs des données nom et porte (voir https://github.com/charroux/Java/blob/master/src/tp2/MonDossierMedical.java). 
 
 Créer une autre version de la classe Statistique appelée StatistiqueEcole qui contient les mêmes fonctions que la classe Statistique mais qui manipule un tableau d'élèves au lieu d'un tableau de note.
+
+---- TP3 à faire pour le 28/11 ---------------
+
+Créer une classe appelée Voiture ayant comme données : une marque et un nombre de portes.
+Créer une classe appelée Conducteur ayant commme données le nom du conducteur.
+Ajoutez comme donnée de la classe Voiture un conducteur.
+Créer une classe appelée Passager ayant comme données le nom de passager.
+Aoutez comme données de la classe Voiture un tableau de passagers (utiliser la classe ArrayList de Java pour créer le tableau de passagers https://openclassrooms.com/courses/apprenez-a-programmer-en-java/les-collections-d-objets) 
+
+Remarque : les classes doivent avoir des constructeurs et des fonctions get et set pour toutes les données des classes.
