@@ -34,8 +34,8 @@ Créer une autre version de la classe Statistique appelée StatistiqueEcole qui 
 
 - Créer une classe appelée Voiture ayant comme données : une marque et un nombre de portes.
 - Créer une classe appelée Conducteur ayant commme données le nom du conducteur.
-Ajoutez comme donnée de la classe Voiture un conducteur.
-Créer une classe appelée Passager ayant comme données le nom de passager.
-Aoutez comme données de la classe Voiture un tableau de passagers (utiliser la classe ArrayList de Java pour créer le tableau de passagers https://openclassrooms.com/courses/apprenez-a-programmer-en-java/les-collections-d-objets) 
+- Ajoutez comme donnée de la classe Voiture un conducteur.
+- Créer une classe appelée Passager ayant comme données le nom de passager.
+- Aoutez comme données de la classe Voiture un tableau de passagers (utiliser la classe ArrayList de Java pour créer le tableau de passagers https://openclassrooms.com/courses/apprenez-a-programmer-en-java/les-collections-d-objets) 
 
 Remarque : les classes doivent avoir des constructeurs et des fonctions get et set pour toutes les données des classes.
