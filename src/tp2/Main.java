@@ -12,6 +12,13 @@ public class Main {
 		age = dossierMedical.getAge();
 		System.out.println("age = " + age);
 		
+		Statistique stat = new Statistique(10);
+		float resultat = stat.moyenne();
+		
+		float[] notes = new float[10]; 
+		
+		Statistique stat1 = new Statistique(notes);
+		
 	}
 
 }
