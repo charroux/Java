@@ -39,3 +39,17 @@ Créer une autre version de la classe Statistique appelée StatistiqueEcole qui 
 - Aoutez comme données de la classe Voiture un tableau de passagers (utiliser la classe ArrayList de Java pour créer le tableau de passagers https://openclassrooms.com/courses/apprenez-a-programmer-en-java/les-collections-d-objets) 
 
 Remarque : les classes doivent avoir des constructeurs et des fonctions get et set pour toutes les données des classes.
+
+
+---- TP4 à faire pour le 29/11 ---------------
+
+- Créer une classe Animal ayant comme attribut un poids et un nom
+- Ajouter à la classe Animal, un constructeur, des méthodes get et set
+- Créer une classe Chien qui hérite de Animal. La classe  Chien a pour attribut le nom du propriétaire du Chien.
+- Ajoutez à la classe Chien un contructeur qui reçoit en argument le nom du chien, son poids ainsi que le nom de son maître.
+- Ecrivez une classe Main contenant un programme principal qui :
+  - afficher  le nom du chien, son poids et le nom de maître
+  - définir une  instance d’Animal
+  - définir deux autres instances de Chien
+  - définir un tableau contenant les 4 instances ci-dessus
+  - afficher les noms des 4 animaux dans une boucle
