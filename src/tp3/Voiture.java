@@ -51,7 +51,7 @@ public class Voiture {
 	}
 
 	public String toString() {
-		return "Voiture [marque=" + marque + ", nbPortes=" + nbPortes + ", conducteur=" + conducteur + "]";
+		return "Voiture [marque=" + marque + ", nbPortes=" + nbPortes + ", conducteur=" + conducteur + ", passagers=" + passagers + "]";
 	}
 	
 }
