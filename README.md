@@ -29,3 +29,30 @@ Re-écrire la classe Statistique du TP1 en :
 Créer une classe Eleve contenant comme données un nom et une note. Ajoutez à cette classe un constructeur initialisant le nom et la note. Ajoutez à la classe les fonctions get et set qui permettent de retourner et de modifier les valeurs des données nom et porte (voir https://github.com/charroux/Java/blob/master/src/tp2/MonDossierMedical.java). 
 
 Créer une autre version de la classe Statistique appelée StatistiqueEcole qui contient les mêmes fonctions que la classe Statistique mais qui manipule un tableau d'élèves au lieu d'un tableau de note.
+
+---- TP3 à faire pour le 28/11 ---------------
+
+- Créer une classe appelée Voiture ayant comme données : une marque et un nombre de portes.
+- Créer une classe appelée Conducteur ayant commme données le nom du conducteur.
+- Ajoutez comme donnée de la classe Voiture un conducteur.
+- Créer une classe appelée Passager ayant comme données le nom de passager.
+- Aoutez comme données de la classe Voiture un tableau de passagers (utiliser la classe ArrayList de Java pour créer le tableau de passagers https://openclassrooms.com/courses/apprenez-a-programmer-en-java/les-collections-d-objets) 
+
+Remarque : les classes doivent avoir des constructeurs et des fonctions get et set pour toutes les données des classes.
+
+
+---- TP4 à faire pour le 29/11 ---------------
+
+Consigne gérérale : toutes les classes doivent avoir des constructeurs, des accesseurs (méthodes get et set), ainsi que la fonction toString
+
+- Créer une classe Animal ayant comme attribut un poids et un nom
+- Créer une classe Chien qui hérite de Animal. La classe  Chien a pour attribut le nom du propriétaire du Chien.
+- Ecrivez une classe Main contenant un programme principal qui :
+  - afficher  le nom du chien, son poids et le nom de maître
+  - définir une  instance d’Animal
+  - définir deux autres instances de Chien
+  - définir un tableau contenant les 4 instances ci-dessus
+  - afficher les noms des 4 animaux dans une boucle
+- Créer une classe Chat qui hérite de Animal. La classe Chat a pour attribut sa race.
+- Rendre abstraite  la classe Animal définie précédemment en ajoutant une méthode abstraite manger().
+- Reprendre et compléter les classes Chien et Chat et Utilisation de manière à ce que les messages 'Le chien mange du Pal' et 'Le chat mange du Ronron' s'affichent correctement.
