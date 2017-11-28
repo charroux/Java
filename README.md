@@ -53,3 +53,7 @@ Remarque : les classes doivent avoir des constructeurs et des fonctions get et s
   - définir deux autres instances de Chien
   - définir un tableau contenant les 4 instances ci-dessus
   - afficher les noms des 4 animaux dans une boucle
+- Créer une classe Chat qui hérite de Animal. La classe Chat a pour attribut sa race.
+- Ajoutez à la classe Chat un contructeur qui reçoit en argument la race du chat, son poids ainsi que le nom de son maître.
+- Rendre abstraite  la classe Animal définie précédemment en ajoutant une méthode abstraite manger().
+- Reprendre et compléter les classes Chien et Chat et Utilisation de manière à ce que les messages 'Le chien mange du Pal' et 'Le chat mange du Ronron' s'affichent correctement.
