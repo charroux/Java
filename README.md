@@ -43,10 +43,10 @@ Remarque : les classes doivent avoir des constructeurs et des fonctions get et s
 
 ---- TP4 à faire pour le 29/11 ---------------
 
+Consigne gérérale : toutes les classes doivent avoir des constructeurs, des accesseurs (méthodes get et set), ainsi que la fonction toString
+
 - Créer une classe Animal ayant comme attribut un poids et un nom
-- Ajouter à la classe Animal, un constructeur, des méthodes get et set
 - Créer une classe Chien qui hérite de Animal. La classe  Chien a pour attribut le nom du propriétaire du Chien.
-- Ajoutez à la classe Chien un contructeur qui reçoit en argument le nom du chien, son poids ainsi que le nom de son maître.
 - Ecrivez une classe Main contenant un programme principal qui :
   - afficher  le nom du chien, son poids et le nom de maître
   - définir une  instance d’Animal
@@ -54,6 +54,5 @@ Remarque : les classes doivent avoir des constructeurs et des fonctions get et s
   - définir un tableau contenant les 4 instances ci-dessus
   - afficher les noms des 4 animaux dans une boucle
 - Créer une classe Chat qui hérite de Animal. La classe Chat a pour attribut sa race.
-- Ajoutez à la classe Chat un contructeur qui reçoit en argument la race du chat, son poids ainsi que le nom de son maître.
 - Rendre abstraite  la classe Animal définie précédemment en ajoutant une méthode abstraite manger().
 - Reprendre et compléter les classes Chien et Chat et Utilisation de manière à ce que les messages 'Le chien mange du Pal' et 'Le chat mange du Ronron' s'affichent correctement.
