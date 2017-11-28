@@ -13,6 +13,10 @@ public class Main {
 		System.out.println(peugeot);    // System.out.println(peugeot.toString());
 		System.out.println(tintin);
 		System.out.println(haddock);
+		
+		peugeot.setNbPortes(3);
+		System.out.println(peugeot);
+		
 	}
 
 }
