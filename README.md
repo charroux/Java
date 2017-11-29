@@ -60,3 +60,17 @@ Consigne gérérale : toutes les classes doivent avoir des constructeurs, des ac
 - Ajoutez à la classe Zoo un constructeur permettant d'allouer la mémoire pour cette référence
 - une méthode d'ajout d'un animal dans le zoo
 - Testez la classe Zoo dans le main
+
+---- TP5 à faire pour le 5/12 ---------------
+
+Le but de cet exercice est de définir une classe PolyLine qui représente une ligne brisée définie par une succession de points. On souhaite que des PolyLine différentes puissent être définies par un nombre de points tous différents donc sans doublon. Pour définir les points de la 
+PolyLine on définira une méthode add qui permet d'ajouter un point à la PolyLine.
+
+Pour tout l'exercice vous ecrirez un main de test dans la classe PolyLineTest.
+
+Indication les points seront stockés dans une classe implémentant l'interface set afin déviter les doublons (voir la Javadoc).
+  - écrire le constructeur ainsi que la méthode add()
+  - Générer automatiquement les méthodes toString, hashcode, equals. Modifier la méthode toString afin d'obtenir par exemple la chaîne ((3 4) (7,5) (19, 2) pour une polyne composée es 3 points (3 4),  (7,5) et (19, 2)
+  - Ecrire une méthode pointCount qui renvoie le nombre de points constituant actuellement la PolyLine
+  - Ecrire une méthode contains qui renvoie vrai si le point passé en argument est un des points constitutifs de la PolyLine
+  - Que se passe t'il si l'on fait un contains avec null en argument ? Et un add avec null en argument ?
