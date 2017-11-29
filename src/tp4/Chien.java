@@ -21,6 +21,11 @@ public class Chien extends Animal{
 	public String toString() {
 		return "Chien [nomProprietaire=" + nomProprietaire + ", toString()=" + super.toString() + "]";
 	}
+
+	@Override
+	public void manger() {
+		System.out.println("Le chien " + super.getNom() + " mange du Pal");
+	}
 	
 	
 }

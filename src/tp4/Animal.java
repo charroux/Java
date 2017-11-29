@@ -1,6 +1,6 @@
 package tp4;
 
-public class Animal {
+public abstract class Animal {
 	
 	private float poids;
 	private String nom;
@@ -30,5 +30,6 @@ public class Animal {
 		return "Animal [poids=" + poids + ", nom=" + nom + "]";
 	}
 	
+	public abstract void manger();
 	
 }

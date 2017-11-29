@@ -21,5 +21,10 @@ public class Chat extends Animal{
 	public String toString() {
 		return "Chat [race=" + race + ", toString()=" + super.toString() + "]";
 	}
+	
+	@Override
+	public void manger() {
+		System.out.println("Le chat " + super.getNom() + "mange du Ronron");
+	}
 
 }
