@@ -68,7 +68,7 @@ PolyLine on définira une méthode add qui permet d'ajouter un point à la PolyL
 
 Pour tout l'exercice vous ecrirez un main de test dans la classe PolyLineTest.
 
-Indication les points seront stockés dans une classe implémentant linterface set afin déviter les oublons (voir la Javadoc).
+Indication les points seront stockés dans une classe implémentant l'interface set afin déviter les doublons (voir la Javadoc).
   - écrire le constructeur ainsi que la méthode add()
   - Générer automatiquement les méthodes toString, hashcode, equals. Modifier la méthode toString afin d'obtenir par exemple la chaîne ((3 4) (7,5) (19, 2) pour une polyne composée es 3 points (3 4),  (7,5) et (19, 2)
   - Ecrire une méthode pointCount qui renvoie le nombre de points constituant actuellement la PolyLine
