@@ -56,3 +56,7 @@ Consigne gérérale : toutes les classes doivent avoir des constructeurs, des ac
 - Créer une classe Chat qui hérite de Animal. La classe Chat a pour attribut sa race.
 - Rendre abstraite  la classe Animal définie précédemment en ajoutant une méthode abstraite manger().
 - Reprendre et compléter les classes Chien et Chat et Utilisation de manière à ce que les messages 'Le chien mange du Pal' et 'Le chat mange du Ronron' s'affichent correctement.
+- Définir une classe Zoo ayant un attribut de type List pour une liste d'animaux (juste une référence)
+- Ajoutez à la classe Zoo un constructeur permettant d'allouer la mémoire pour cette référence
+- une méthode d'ajout d'un animal dans le zoo
+- Testez la classe Zoo dans le main
