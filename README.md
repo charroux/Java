@@ -66,11 +66,11 @@ Consigne gérérale : toutes les classes doivent avoir des constructeurs, des ac
 Le but de cet exercice est de définir une classe PolyLine qui représente une ligne brisée définie par une succession de points. On souhaite que des PolyLine différentes puissent être définies par un nombre de points tous différents donc sans doublon. Pour définir les points de la 
 PolyLine on définira une méthode add qui permet d'ajouter un point à la PolyLine.
 
-Pour tout l'exercice vous ecrirez un main e test dans la classe PolyLineTest.
+Pour tout l'exercice vous ecrirez un main de test dans la classe PolyLineTest.
 
 Indication les points seront stockés dans une classe implémentant linterface set afin déviter les oublons (voir la Javadoc).
-  - érire le constructeur ainsi que la méthode add()
-  - Générer automatiquement les méthodes toString, hashcode, equals. Modifier la méthode oString afin d'obtenir par exemple la chaîne ((3 4) (7,5) (19, 2) pour une polyne composée es 3 points (3 4),  (7,5) et (19, 2)
-  - Ecrire une méthode pointCount ui renvoie le nombre de points constituant actuellement a PolyLine
-  - Ecrire une méthode contains ui renvoie vrai si le point passé en argument est un des ints constitutifs de la PolyLine
-  - Que se passe t'il si l'on fait un contains vec null en argument ? Et un add vec null en argument ?
+  - écrire le constructeur ainsi que la méthode add()
+  - Générer automatiquement les méthodes toString, hashcode, equals. Modifier la méthode toString afin d'obtenir par exemple la chaîne ((3 4) (7,5) (19, 2) pour une polyne composée es 3 points (3 4),  (7,5) et (19, 2)
+  - Ecrire une méthode pointCount qui renvoie le nombre de points constituant actuellement la PolyLine
+  - Ecrire une méthode contains qui renvoie vrai si le point passé en argument est un des points constitutifs de la PolyLine
+  - Que se passe t'il si l'on fait un contains avec null en argument ? Et un add avec null en argument ?
