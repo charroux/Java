@@ -74,3 +74,9 @@ Indication les points seront stockés dans une classe implémentant l'interface 
   - Ecrire une méthode pointCount qui renvoie le nombre de points constituant actuellement la PolyLine
   - Ecrire une méthode contains qui renvoie vrai si le point passé en argument est un des points constitutifs de la PolyLine
   - Que se passe t'il si l'on fait un contains avec null en argument ? Et un add avec null en argument ?
+
+---- TP6 à faire pour le 6/12 ---------------
+
+Soit la classe Compte (voir le package tp6) qui représente un compte bancaire.
+- Ecrire les méthodes conformément aux commentaires du code.
+- Ecrire un programme principale qui test tous les cas d'erreurs
