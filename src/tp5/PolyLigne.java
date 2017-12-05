@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 public class PolyLigne implements Set<Point>{
-
+	
 	ArrayList<Point> points = new ArrayList<Point>();
 	
 	/**
@@ -25,74 +25,98 @@ public class PolyLigne implements Set<Point>{
 
 	@Override
 	public boolean addAll(Collection c) {
-		// TODO Auto-generated method stub
-		return false;
+		// boucle sur la collection de points
+		// si un point de la collection n'est pas présent dans le tableau points
+		// on l'ajoute au tableau point
+		return points.addAll(c);
 	}
 
+	/**
+	 * Removes all of the elements from this set (optional operation)
+	 */
 	@Override
 	public void clear() {
-		// TODO Auto-generated method stub
-		
+		points.clear();
 	}
 
+	/**
+	 * Returns true if this set contains the specified element.
+	 */
 	@Override
 	public boolean contains(Object o) {
-		// TODO Auto-generated method stub
-		return false;
+		return points.contains(o);
 	}
 
+	/**
+	 * Returns true if this set contains all of the elements of the specified collection.
+	 */
 	@Override
 	public boolean containsAll(Collection c) {
-		// TODO Auto-generated method stub
-		return false;
+		
+/*		Iterator<Object> iterator = c.iterator();
+		while(iterator.hasNext()) {
+			if(points.contains(iterator.next()) == false){
+				return false;
+			}			
+		}
+		return true;*/
+		
+		Object[] tabCollection = c.toArray();
+		// Pour tous les éléments de la collection c
+		// Vérifier s'ils sont tous présents dans l'ArrayList points
+		for(int i=0; i<tabCollection.length; i++) {
+			// Si, ne serait-ce, qu'un élément est absent on retourne false 
+			if(points.contains(tabCollection[i]) == false){
+				return false;
+			}
+		}		
+		return true;
 	}
 
 	@Override
 	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
+		return points.isEmpty();
 	}
 
 	@Override
 	public Iterator iterator() {
-		// TODO Auto-generated method stub
-		return null;
+		return points.iterator();
 	}
 
 	@Override
 	public boolean remove(Object o) {
-		// TODO Auto-generated method stub
-		return false;
+		return points.remove(o);
 	}
 
 	@Override
 	public boolean removeAll(Collection c) {
-		// TODO Auto-generated method stub
-		return false;
+		return points.removeAll(c);
 	}
 
 	@Override
 	public boolean retainAll(Collection c) {
-		// TODO Auto-generated method stub
-		return false;
+		return points.retainAll(c);
 	}
 
 	@Override
 	public int size() {
-		// TODO Auto-generated method stub
-		return 0;
+		return points.size();
 	}
 
 	@Override
 	public Object[] toArray() {
-		// TODO Auto-generated method stub
-		return null;
+		return points.toArray();
 	}
 
 	@Override
 	public Object[] toArray(Object[] a) {
-		// TODO Auto-generated method stub
-		return null;
+		return points.toArray(a);
 	}
+
+	@Override
+	public String toString() {
+		return "PolyLigne [points=" + points + "]";
+	}
+
 
 }
