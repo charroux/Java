@@ -15,12 +15,12 @@ public class Compte {
 	 * @param credit
 	 * @throws Exception si credit <= 0
 	 */
-	void crediter(float credit) throws Exception{
+	public void crediter(float credit) throws Exception{
 		if(credit <= 0) throw new Exception("Credit doit etre > 0");
 		solde = solde + credit;
 	}
 
-	float getSolde() {
+	public float getSolde() {
 		return solde;
 	}
 
@@ -31,7 +31,7 @@ public class Compte {
 	 * retourne la valeur du solde si le solde est inferieur au montant demande. 
 	 * @throws Exception si debit < 20 ou si debit > 1000 euros.
 	 */
-	float debiter(float debit) throws Exception{
+	public float debiter(float debit) throws Exception{
 		if(debit <= 0) throw new Exception("Debit doit etre > 0");
 		if(debit > solde) throw new Exception("Debit ne peut pas etre > " + solde);
 		solde = solde - debit;
@@ -48,5 +48,11 @@ public class Compte {
 		this.solde = solde;
 	}
 
+	@Override
+	public String toString() {
+		return "Compte [solde=" + solde + "]";
+	}
+
+	
 
 }
