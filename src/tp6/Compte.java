@@ -3,11 +3,13 @@ package tp6;
 public class Compte {
 	
 	private float solde;
+	private TypeCompte typeCompte;
 	
-	public Compte(float solde) throws Exception {
+	public Compte(float solde, TypeCompte typeCompte) throws Exception {
 		super();
 		if(solde <= 0) throw new Exception("solde doit etre > 0");
 		this.solde = solde;
+		this.typeCompte = typeCompte;
 	}
 
 	/**
@@ -53,6 +55,13 @@ public class Compte {
 		return "Compte [solde=" + solde + "]";
 	}
 
-	
+	public TypeCompte getTypeCompte() {
+		return typeCompte;
+	}
+
+	public void setTypeCompte(TypeCompte typeCompte) {
+		this.typeCompte = typeCompte;
+	}
+
 
 }

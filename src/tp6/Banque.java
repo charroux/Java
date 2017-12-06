@@ -6,11 +6,11 @@ public class Banque {
 	
 	private Hashtable<String, Compte> comptes = new Hashtable<String, Compte>(); 
 	
-	public void creerCompte(String nom, float solde) throws Exception{
+	public void creerCompte(String nom, float solde, TypeCompte typeCompte) throws Exception{
 		if(nom == null) {
 			throw new Exception("nom ne doit pas etre null");
 		}
-		Compte compte = new Compte(solde);
+		Compte compte = new Compte(solde, typeCompte);
 		comptes.put(nom, compte);
 	}
 	
