@@ -83,3 +83,7 @@ Soit la classe Compte (voir le package tp6) qui représente un compte bancaire.
 
 Créer une classe Banque qui a commme argument une table de hachage (Hashatable) ayant pour clef le nom d'un détenteur de compte et en valeur un objet de type Compte. Ajoutez à cette classe une fonction appelée creerCompte qui reçoit en argument le nom d'un détenteur et le solde initial du compte et qui ajoute un compte dans la table de hachage. Cette fonction doit lancer une exception si le nom est null ou si le compte est créé avec un solde invalide. Compléter le main avec l'utilisation de la classe Banque. Ajoutez à la classe Banque une fonction appelée getCompte qui reçoit en argument le nom du détenteur de compte et qui retourne le compte correspondant.
 
+
+---- TP7 ---------------
+
+Compléter le programme de la classe tp7.GestionFichier pour lire et afficher à l'écran toutes les lignes d'un fichier
