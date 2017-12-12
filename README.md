@@ -89,5 +89,7 @@ Créer une classe Banque qui a commme argument une table de hachage (Hashatable)
 Compléter le programme de la classe tp7.GestionFichier pour lire et afficher à l'écran toutes les lignes d'un fichier.
 Ajouter à la classe une fonction appelée chargePersonne qui prend en argument le nom d'un fichier qui lit le contenu et qui créé un objet du type personne. Pour cela vous créerez une classe Personne. Le format du fichier est le suivant:
 nom: XXX
+
 prenom: XXX
+
 age:XXX
