@@ -10,7 +10,26 @@ public class GestionFichier {
 	public static void main(String[] a) {
 
 		try {
-			URI uri = new URI("file:///foo/bar/bidon.txt");	// toujours / => portable entre Linux et Windows
+			String user = System.getProperty("user.home");
+			System.out.println(user);
+			user = user.replace("\\", "/");
+			System.out.println(user);
+			String location = "file:///" + user + "/bidon.txt";
+			URI uri = new URI(location);
+			System.out.println(uri);
+			File file = new File(uri);
+			FileInputStream fis = new FileInputStream(file);
+			Scanner scanner = new Scanner(fis);
+			String s;
+			while(scanner.hasNextLine()) {
+				s = scanner.nextLine();
+				System.out.println(s);
+			}
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		/*try {
+			URI uri = new URI("file:///c:/foo/bar/bidon.txt");	// toujours / => portable entre Linux et Windows
 			File file = new File(uri);
 			FileInputStream fis = new FileInputStream(file);
 			Scanner scanner = new Scanner(fis);
@@ -25,7 +44,7 @@ public class GestionFichier {
 			Scanner scanner = new Scanner(fis);
 		} catch(Exception e) {
 			e.printStackTrace();
-		}
+		}*/
 	}
 
 }
