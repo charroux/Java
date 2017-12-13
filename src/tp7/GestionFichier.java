@@ -3,14 +3,41 @@ package tp7;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.net.URI;
 import java.util.Scanner;
 
 public class GestionFichier {
 	
+	public Personne chargePersonne(String fichierPersonne) throws FileNotFoundException, Exception {
+		Scanner scanner = null;
+		try {
+			String path = "." + File.separator + "data" + File.separator + fichierPersonne;
+			File file = new File(path);
+			FileInputStream fis = new FileInputStream(file);
+			scanner = new Scanner(fis);
+			String nom = scanner.nextLine();
+			String prenom = scanner.nextLine();
+			int age = scanner.nextInt();
+			Personne personne = new Personne(nom, prenom, age);
+			return personne;	
+		}  finally {						// on passe dans la clause finally qu'il y eu un exception ou pas
+			if(scanner != null) {
+				scanner.close();		// on ferme le fichier qui est détenu par le système d'exploitation
+			}
+		}
+	}
+	
 	public static void main(String[] a) {
-
-		// acces fichier chemin absolu
+		try {
+			GestionFichier gestionFichier = new GestionFichier();
+			Personne personne = gestionFichier.chargePersonne("personne.txt");
+			System.out.println(personne);
+		} catch (FileNotFoundException e) {
+			System.out.println("Pas de fichier personne.txt");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	
+/*		// acces fichier chemin absolu
 		
 		URI uri = null;
 		Scanner scanner = null;
@@ -63,7 +90,7 @@ public class GestionFichier {
 			if(scanner != null) {
 				scanner.close();		// on ferme le fichier qui est détenu par le système d'exploitation
 			}
-		}
+		}*/
 	}
 
 }
