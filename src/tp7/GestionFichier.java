@@ -3,9 +3,37 @@ package tp7;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class GestionFichier {
+	
+	public void sauvegardePersonne(Personne personne, String fichierPersonne) throws IOException {
+		FileWriter fileWriter = null;
+		try {
+			String path = "." + File.separator + "data";	
+			File file = new File(path);
+			file.mkdirs();
+			path = "." + File.separator + "data" + File.separator + fichierPersonne;
+			file = new File(path);
+			fileWriter = new FileWriter(file);
+			int age = personne.getAge();
+			Integer a = new Integer(age);
+			String nom = personne.getNom();
+			String prenom = personne.getPrenom();
+			fileWriter.write(nom);
+			fileWriter.write("\n");
+			fileWriter.write(prenom);
+			fileWriter.write("\n");
+			fileWriter.write(a.toString());
+			fileWriter.flush();
+		} finally {
+			if(fileWriter != null) {
+				fileWriter.close();
+			}
+		}
+	}
 	
 	public Personne chargePersonne(String fichierPersonne) throws FileNotFoundException, Exception {
 		Scanner scanner = null;
@@ -28,9 +56,21 @@ public class GestionFichier {
 	
 	public static void main(String[] a) {
 		try {
+			
 			GestionFichier gestionFichier = new GestionFichier();
-			Personne personne = gestionFichier.chargePersonne("personne.txt");
+			
+			Personne personne = new Personne("Capitaine", "Haddock", 55);
+			
+			gestionFichier.sauvegardePersonne(personne, "personne.txt");
+			
+			personne = gestionFichier.chargePersonne("personne.txt");
 			System.out.println(personne);
+			
+			personne.setAge(100);
+			System.out.println(personne);
+			
+			gestionFichier.sauvegardePersonne(personne, "personne.txt");			
+			
 		} catch (FileNotFoundException e) {
 			System.out.println("Pas de fichier personne.txt");
 		} catch (Exception e) {
